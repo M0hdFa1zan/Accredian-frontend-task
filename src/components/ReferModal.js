@@ -13,7 +13,7 @@ function ReferModal({ open, onClose }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5000/api/refer', formData);
+            await axios.post('https://accredian-backend-task-5ynl.onrender.com/api/refer', formData);
             alert('Referral sent successfully!');
             onClose();
             setFormData({ referrerName: '', referrerEmail: '', refereeName: '', refereeEmail: '' });
