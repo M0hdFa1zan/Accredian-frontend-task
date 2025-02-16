@@ -1,0 +1,131 @@
+.howrefer {
+    display: flex;
+    margin: 100px 0;
+    width: 100%;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DDEAFC;
+}
+
+.howe {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.circle-area {
+    position: relative;
+    width: 70%;
+    margin: 50px;
+}
+
+.circle-area img {
+    width: 100%;
+}
+
+.oncircle {
+    display: flex;
+    width: 76.7%;
+    position: absolute;
+    justify-content: space-between;
+    top: 90px;
+    left: 148px;
+}
+
+.in-circles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 280px;
+    background-color: #DDEAFC;
+    border-radius: 50%;
+    text-align: center;
+    gap: 40px;
+}
+
+.circle-img {
+    display: flex;
+    width: 60px;
+}
+
+.circle-img img {
+    width: 100%;
+}
+
+.circle-detail {
+    width: 75%;
+}
+
+.btn-reftwo button {
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 20px 60px;
+    color: white;
+    background-color: #1A73E8;
+}
+
+.btn-reftwo button:hover {
+    background-color: #0552b6;
+    transition: .3s;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .oncircle {
+        width: 76.7%;
+        top: 70px;
+        left: 117px;
+    }
+
+    .in-circles {
+        height: 225px;
+        width: 225px;
+        gap: 25px;
+    }
+
+    .circle-detail {
+        font-size: 15px;
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .oncircle {
+        flex-direction: column;
+        align-items: center;
+        top: 80px;
+        left: 13%;
+        gap: 78px;
+    }
+
+    .circle-area {
+        width: 100%;
+        margin: 0;
+    }
+
+    .three-images {
+        display: flex;
+        width: 100%;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .three-images img {
+        rotate: 90deg;
+        width: 100%;
+        margin: 0;
+        scale: 2.5;
+    }
+
+    .in-circles {
+        height: 225px;
+        width: 225px;
+        gap: 20px;
+    }
+
+}

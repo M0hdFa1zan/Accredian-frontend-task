@@ -1,0 +1,84 @@
+.faqs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.contain-faqs {
+    display: flex;
+    width: 71%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.faq-detail {
+    display: flex;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.btns-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 30px;
+}
+
+.btns-faq button {
+    font-size: 17px;
+    padding: 27px;
+    width: 260px;
+    border: 2px;
+    border-radius: 7px;
+    background-color: transparent;
+}
+
+.btn-elig button {
+    color: #1A73E8;
+}
+
+.btn-rest button {
+    color: #737373;
+    border-style: solid;
+    border-color: #737373;
+}
+
+.btn-rest button:hover {
+    color: #1A73E8;
+    border-color: white;
+    transition: .3s;
+}
+
+.points {
+    display: flex;
+    font-size: 17px;
+    margin-top: 25px;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.p-one {
+    color: #1A73E8;
+}
+
+.p-two {
+    margin-left: 10px;
+}
+
+.p-three {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .faqs {
+        display: none;
+    }
+
+}

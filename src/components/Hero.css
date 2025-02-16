@@ -1,0 +1,218 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-contain {
+    display: flex;
+    flex-direction: column;
+    width: 72%;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    color: #4B4B4B;
+    font-size: 23px;
+    line-height: 22px;
+    justify-content: center;
+    width: 60%;
+    padding: 18px;
+    border-radius: 38px;
+    gap: 12%;
+    margin: 50px;
+    background-color: #DDEAFC;
+}
+
+.refer-section {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    background-color: #DDEAFC;
+    box-shadow: 0px 4px 65px 1px #00072B36;
+}
+
+.ref-details {
+    display: flex;
+    width: 50%;
+    gap: 50px;
+    margin-left: 70px;
+    margin-top: 40px;
+    flex-direction: column;
+    font-family: "Roboto";
+    z-index: 4;
+}
+
+.ref-title {
+    display: flex;
+    font-weight: bold;
+    font-size: 88px;
+    line-height: 88px;
+    width: 85%;
+}
+
+.ref-money {
+    width: 70%;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+span {
+    font-weight: bold;
+    color: #1A73E8;
+}
+
+.btn-ref button {
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    padding: 12.5px 52px;
+    color: white;
+    background-color: #1A73E8;
+}
+
+.btn-ref button:hover {
+    background-color: #0552b6;
+    transition: .3s;
+}
+
+.ref-img {
+    display: flex;
+    margin-right: 60px;
+    margin-top: 40px;
+    z-index: 4;
+}
+
+.ref-img img {
+    width: 100%;
+}
+
+.money-one {
+    position: absolute;
+    top: 0px;
+}
+
+.money-three {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+.money-two {
+    position: absolute;
+    right: 30.5%;
+    rotate: 250deg;
+    top: 10px;
+}
+
+.money-four {
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+    z-index: 10;
+}
+
+.money-five {
+    position: absolute;
+    rotate: 180deg;
+    right: 20px;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+    .ref-details {
+        width: 50%;
+        gap: 40px;
+        margin-left: 50px;
+        margin-top: 40px;
+    }
+
+    .ref-title {
+        font-size: 58px;
+        line-height: 58px;
+        width: 100%;
+    }
+
+    .ref-money {
+        width: 80%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .ref-img {
+        margin-right: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .hero-contain {
+        width: 95%;
+    }
+
+    .tabs {
+        font-size: 18px;
+        width: 90%;
+        padding: 18px;
+        border-radius: 38px;
+        margin-top: 60px;
+        background-color: #DDEAFC;
+    }
+
+    .ref-details {
+        width: 100%;
+        padding: 50px 0;
+        gap: 10px;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: "Roboto";
+        z-index: 4;
+    }
+
+    .ref-title {
+        justify-content: center;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 50px;
+        width: 100%;
+    }
+
+    .ref-money {
+        width: 65%;
+        font-size: 20px;
+        line-height: 35px;
+        margin: 20px 0;
+    }
+
+    .ref-img {
+        display: none;
+    }
+
+    .money-two {
+        display: none;
+    }
+
+    .money-four {
+        left: 0;
+    }
+
+    .money-five {
+        bottom: 0;
+        right: 0;
+    }
+
+    .money-four img,
+    .money-one img,
+    .money-three img,
+    .money-five img {
+        width: 100px;
+    }
+
+}

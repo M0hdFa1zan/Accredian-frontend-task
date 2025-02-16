@@ -1,0 +1,208 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer {
+    display: flex;
+    font-size: 17px;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px 0px;
+    width: 100%;
+    background-color: #DDEAFC;
+}
+
+.contain-offer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.contact {
+    color: #1A73E8;
+}
+
+.nav-contain {
+    display: flex;
+    width: 72%;
+    margin: 20px 0;
+    align-items: center;
+    font-size: 15px;
+}
+
+.navleft {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+}
+
+.btn-course button {
+    border: none;
+    border-radius: 6px;
+    padding: 12.5px 22px;
+    color: white;
+    background-color: #1A73E8;
+}
+
+.btn-course button:hover {
+    background-color: #0552b6;
+    transition: .3s;
+}
+
+.explore {
+    display: none;
+}
+
+.navright {
+    display: flex;
+    width: 90%;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navright.open {
+    display: block;
+    transform: translateY(0);
+    transition: 1s ease-in-out;
+}
+
+.btn-couple {
+    display: flex;
+    gap: 10px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.btn-login {
+    display: flex;
+    align-items: center;
+}
+
+.btn-couple {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-login button {
+    border: none;
+    border-radius: 6px;
+    padding: 12.5px 22px;
+    background-color: #eaedf1;
+}
+
+.btn-login button:hover {
+    background-color: #bcbfc4;
+    transition: .3s;
+}
+
+.btn-try button {
+    border: none;
+    border-radius: 6px;
+    padding: 12.5px 22px;
+    color: white;
+    background-color: #1A73E8;
+}
+
+.btn-try button:hover {
+    background-color: #0552b6;
+    transition: .3s;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .offer {
+        font-size: 17px;
+        gap: 0px;
+        background-color: #DDEAFC;
+    }
+
+    .nav-contain {
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .navleft {
+        width: 35%;
+    }
+
+    .btn-course {
+        display: none;
+    }
+
+    .explore {
+        display: flex;
+        margin-left: 60px;
+    }
+
+    .explore button {
+        display: flex;
+        gap: 5px;
+        border: none;
+        align-items: center;
+        border-radius: 4px;
+        padding: 10px 15px;
+        font-size: 16px;
+        color: white;
+        background-color: #1A73E8;
+    }
+
+    .explore button img {
+        rotate: -90deg;
+    }
+
+    .navright {
+        display: none;
+        gap: 15px;
+        transform: translateY(-100%);
+        position: absolute;
+        top: 140px;
+        left: 0;
+        right: 0;
+    }
+
+    .navright.open {
+        display: flex;
+        max-height: 500px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .btn-couple {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 2px;
+    }
+
+    .btn-couple button {
+        padding: 8px;
+        width: 100px;
+    }
+}
