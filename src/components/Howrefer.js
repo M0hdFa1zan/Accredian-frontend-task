@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
+import ReferModal from './ReferModal';
 import "./Howrefer.css"
 
 function Howrefer() {
+
+    const [open, setOpen] = useState(false);
+
     return (
         <div className='howrefer'>
             <div className='howe'>How do i <span>Refer?</span></div>
@@ -22,7 +26,8 @@ function Howrefer() {
                     </div>
                 </div>
             </div>
-            <div className='btn-reftwo'><button>Refer Now</button></div>
+            <div className='btn-reftwo'><button onClick={() => setOpen(true)}>Refer Now</button></div>
+            <ReferModal open={open} onClose={() => setOpen(false)} />
         </div>
     )
 }
